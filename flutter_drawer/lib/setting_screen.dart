@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class SettingScreen extends StatefulWidget {
-
   @override
   _SettingScreenState createState() => _SettingScreenState();
 }

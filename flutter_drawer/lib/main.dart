@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_drawer/profile_screen.dart';
 import 'package:flutter_drawer/setting_screen.dart';
+import 'package:flutter_drawer/DataScreen.dart';
 
 void main() => runApp(MyApp());
 
@@ -67,13 +69,20 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Divider(),
             ListTile(
-              title: Text('Settings'),
+              title: Text('Settings Screen'),
               onTap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => SettingScreen()));
               },
             ),
             Divider(),
+            ListTile(
+              title: Text('Data Screen'),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => DataScreen()));
+              },
+            ),
           ],
         ),
       ),
